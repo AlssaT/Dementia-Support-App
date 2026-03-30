@@ -36,4 +36,6 @@ export const router = createBrowserRouter([
     path: "/caregiver",
     Component: CaregiverMode,
   },
-]);
+], {
+  basename: "/Dementia-Support-App"
+});
