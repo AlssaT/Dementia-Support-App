@@ -1,4 +1,4 @@
-import { createBrowserRouter } from "react-router";
+import { createHashRouter } from "react-router";
 import { WakeScreen } from "./components/WakeScreen";
 import { MyPhotos } from "./components/MyPhotos";
 import { MyPeople } from "./components/MyPeople";
@@ -7,7 +7,7 @@ import { Location } from "./components/Location";
 import { CaregiverMode } from "./components/CaregiverMode";
 import { MainMenu } from "./components/MainMenu";
 
-export const router = createBrowserRouter([
+export const router = createHashRouter([
   {
     path: "/",
     Component: WakeScreen,
@@ -36,6 +36,4 @@ export const router = createBrowserRouter([
     path: "/caregiver",
     Component: CaregiverMode,
   },
-], {
-  basename: "/Dementia-Support-App"
-});
+]);
